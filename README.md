@@ -1,4 +1,4 @@
-O programa implementado a Torres de Hanói , um clássico
+O programa implementa a Torres de Hanói , um problema clássico matemático e de recursão. Ele move uma pilha de discos de uma torre de origem para uma torre de destino, seguindo regras específicas:
 
 Somente um disco pode ser movido por vez.
 Um disco maior nunca pode ser colocado sobre um disco menor.
@@ -7,23 +7,31 @@ Descrição do funcionamento:
 1. Estrutura do código:
 mover_disco(origem, destino)
 
-Remover o último di
+Remova o último disco da torre de origem e adicione na torre de destino.
 imprimir_torres(torre_A, torre_B, torre_C)
 
-Exi
+Exibe o estado atual das torres após cada entrega.
 torres_de_hanoi_recursivo(num_disco, origem, destino, auxiliar)
 
-Resolver o problema recorrente
-S
+Resolva o problema recursivamente.
+Se houver apenas um disco, ele é movido diretamente para o destino.
 Caso contrário:
-(n-1) por
-Mover
-Mover os (n-1) d
+Mover (n-1) discos da torre de origem para a torre auxiliar.
+Mova o disco maior diretamente para o destino.
+Mover os (n-1) discos da torre auxiliar para a torre de destino.
 2. Inicialização das torres e execução:
-A torre Ainic
-Como torres Be **CC co
-Uma linha *torres_de_hanoi_recursivoé
+A torre A inicia com todos os discos ordenados.
+As torres B e C são vazias.
+A função torres_de_hanoi_recursivoé chamada para resolver o problema.
+Erros e ajustes necessários:
+Erro de digitação em num_dsico→ deve sernum_disco
+Referências incorretas a torre_A, torre_B, torre_Cdentro da função recursiva
+A função recebe as torres como argumentos, então a referência global não funciona corretamente.
+Deve-se imprimir as partições locais recebidas pela função.
 
+
+
+#Programa Validação CPF
 
 
 Este programa em Python tem a finalidade de validar um número de CPF (Cadastro de Pessoas Físicas) confo
